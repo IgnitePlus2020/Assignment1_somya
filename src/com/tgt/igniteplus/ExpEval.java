@@ -50,11 +50,10 @@ public class ExpEval {
 
         //create stack for val and op
         Stack<Character> op=new Stack<Character>();
-        System.out.println(token);
 
         //trace the token array
         for (int i = 0; i <token.length ; i++) {
-            System.out.println("\n\n****** "+i+")" + token[i]+" ********");
+            System.out.println("\n\n"+i+")\t" + token[i]);
 
 
             //if token is a number push it into val stack
@@ -71,7 +70,7 @@ i--;
                 }
             //if token is (
             else if (token[i] == '(')
-            {   System.out.println("-------------(---------------");
+            {
                 op.push(token[i]);
             }
 
