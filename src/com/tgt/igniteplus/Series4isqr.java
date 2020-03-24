@@ -8,7 +8,9 @@ public class Series4isqr {
         Scanner in  =new Scanner(System.in);
         n=in.nextInt();
         for (int i = 1; i <=n ; i++) {
-            System.out.print(4*i*i+", ");
+            System.out.print(4*i*i);
+            if (i<n)
+                System.out.print(",");
 
         }
 
@@ -16,5 +18,5 @@ public class Series4isqr {
 }
 /*
 10
-4, 16, 36, 64, 100, 144, 196, 256, 324, 400,
+4,16,36,64,100,144,196,256,324,400
  */
